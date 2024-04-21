@@ -63,9 +63,9 @@ def chat_with_model(prompt):
     except Exception as e:
         if 'no valid `Part`' in str(e) or 'broken streaming response' in str(e):
             chat.rewind()
-            return "I'm sorry, but I cannot process inappropriate content. Let's talk about something else."
+            return "I'm sorry, but I cannot process inappropriate content honey. Let's talk about something else ok? "
         else:
-            return "Sorry, something went wrong. Please try again later."
+            return "Sorry, I'm here to help, but I'm not sure I understood your last message dear. Could you please clarify your question or ask something else? I'm ready to assist with whatever you need! "
 
 # Streamlit App Title
 with st.container():
@@ -84,7 +84,7 @@ prompt = st.chat_input("Enter a question")
 
 # First Message & Initialization
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
+    st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you my dear?"}]
     
 
 for msg in st.session_state.messages:
