@@ -1,4 +1,4 @@
-name: google_mother_ai
+name: /opt/homebrew/anaconda3/envs/google_mother_ai
 channels:
   - defaults
   - conda-forge
